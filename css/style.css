@@ -6,7 +6,9 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -269,10 +271,24 @@ body {
       font-size: 2.9rem; } }
   @media (max-width: 250em) {
     .paragraph-small {
-      font-size: 2.7rem; } }
+      font-size: 2.5rem; } }
   @media (max-width: 156.25em) {
     .paragraph-small {
-      font-size: 2.5rem; } }
+      font-size: 2.2rem; } }
+  @media (max-width: 131.25em) {
+    .paragraph-small {
+      font-size: 2rem; } }
+  @media (max-width: 87.5em) {
+    .paragraph-small {
+      font-size: 1.8rem; } }
+  @media (max-width: 75em) {
+    .paragraph-small {
+      font-size: 1.7rem; } }
+  @media (max-width: 64.0625em) {
+    .paragraph-small {
+      font-size: 1.7rem;
+      margin-bottom: 1rem !important;
+      line-height: 1.5; } }
 
 .btn,
 .btn:link,
@@ -632,20 +648,100 @@ main {
   position: relative;
   width: 80%;
   margin: 0 auto; }
+  @media (max-width: 112.5em) {
+    .showreel {
+      width: 85%; } }
+  @media (max-width: 64.0625em) {
+    .showreel {
+      width: 82%; } }
+  @media (max-width: 48em) {
+    .showreel {
+      width: 85%; } }
+  @media (max-width: 35.9375em) {
+    .showreel {
+      width: 90%; } }
   .showreel__bg {
     width: 100%; }
     .showreel__bg--content {
       width: 100%; }
 
 .about {
-  display: none;
-  padding: 10rem 10rem 12rem; }
-  .about__leftPart {
-    width: 48%;
-    float: left; }
-  .about__rightPart {
-    float: right;
+  padding: 10rem 20rem; }
+  @media (min-width: 250.0625em) {
+    .about {
+      height: auto; } }
+  @media (min-width: 437.5625em) {
+    .about {
+      height: auto; } }
+  @media (max-width: 250em) {
+    .about {
+      height: auto; } }
+  @media (max-width: 131.25em) {
+    .about {
+      height: auto; } }
+  @media (max-width: 112.5em) {
+    .about {
+      padding: 10rem 15rem; } }
+  @media (max-width: 100em) {
+    .about {
+      padding: 10rem 12rem; } }
+  @media (max-width: 87.5em) {
+    .about {
+      padding: 10rem 10rem;
+      height: auto; } }
+  @media (max-width: 75em) {
+    .about {
+      padding: 10rem 8rem;
+      margin-top: 0rem;
+      height: auto; } }
+  @media (max-width: 64.0625em) {
+    .about {
+      padding: 5rem 8rem;
+      height: auto; } }
+  @media (max-width: 48em) {
+    .about {
+      padding: 5rem 3rem;
+      height: auto; } }
+  @media (max-width: 35.9375em) {
+    .about {
+      padding: 3.5rem 2rem;
+      height: auto; } }
+  .about__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    @media (max-width: 64.0625em) {
+      .about__wrapper {
+        flex-direction: column;
+        text-align: center; } }
+  .about__imagePart {
     width: 48%; }
+    @media (max-width: 64.0625em) {
+      .about__imagePart {
+        width: 100%;
+        order: 2; } }
+    .about__imagePart img {
+      width: 80%; }
+  .about__textPart {
+    width: 48%; }
+    @media (max-width: 64.0625em) {
+      .about__textPart {
+        width: 100%;
+        order: 1;
+        margin-bottom: 5rem; } }
+    .about__textPart--heading {
+      background-image: url("../assets/Rich_media.jpg");
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -o-background-clip: text;
+      -ms-background-clip: text;
+      color: transparent;
+      letter-spacing: 2px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 100% 120%; }
   .about__devider {
     position: relative;
     height: 10px;
@@ -821,6 +917,54 @@ main {
     height: 541px;
     bottom: 0;
     margin: auto 0; }
+    @media (min-width: 250.0625em) {
+      .client__colorLeft, .platform__colorLeft {
+        top: 13rem; } }
+    @media (min-width: 437.5625em) {
+      .client__colorLeft, .platform__colorLeft {
+        top: 17rem; } }
+    @media (max-width: 250em) {
+      .client__colorLeft, .platform__colorLeft {
+        top: 13rem; } }
+    @media (max-width: 206.25em) {
+      .client__colorLeft, .platform__colorLeft {
+        top: 10rem; } }
+    @media (max-width: 181.25em) {
+      .client__colorLeft, .platform__colorLeft {
+        top: 9rem; } }
+    @media (max-width: 131.25em) {
+      .client__colorLeft, .platform__colorLeft {
+        top: 6rem; } }
+    @media (max-width: 75em) {
+      .client__colorLeft, .platform__colorLeft {
+        top: 19rem;
+        height: auto; } }
+    @media (max-width: 64.0625em) {
+      .client__colorLeft, .platform__colorLeft {
+        top: 21rem;
+        height: auto; } }
+    @media (max-width: 48em) {
+      .client__colorLeft, .platform__colorLeft {
+        top: 23rem;
+        height: auto; } }
+    @media (max-width: 35.9375em) {
+      .client__colorLeft, .platform__colorLeft {
+        top: 29rem;
+        height: auto; } }
+    .client__colorLeft img, .platform__colorLeft img {
+      width: 100%; }
+      @media (max-width: 75em) {
+        .client__colorLeft img, .platform__colorLeft img {
+          width: 70%; } }
+      @media (max-width: 64.0625em) {
+        .client__colorLeft img, .platform__colorLeft img {
+          width: 60%; } }
+      @media (max-width: 48em) {
+        .client__colorLeft img, .platform__colorLeft img {
+          width: 50%; } }
+      @media (max-width: 35.9375em) {
+        .client__colorLeft img, .platform__colorLeft img {
+          width: 30%; } }
   .client__colorRight, .platform__colorRight {
     position: absolute;
     top: 0;
@@ -829,6 +973,58 @@ main {
     height: 541px;
     bottom: 0;
     margin: auto 0; }
+    @media (min-width: 250.0625em) {
+      .client__colorRight, .platform__colorRight {
+        top: 13rem; } }
+    @media (min-width: 437.5625em) {
+      .client__colorRight, .platform__colorRight {
+        top: 17rem; } }
+    @media (max-width: 250em) {
+      .client__colorRight, .platform__colorRight {
+        top: 13rem; } }
+    @media (max-width: 206.25em) {
+      .client__colorRight, .platform__colorRight {
+        top: 10rem; } }
+    @media (max-width: 181.25em) {
+      .client__colorRight, .platform__colorRight {
+        top: 9rem; } }
+    @media (max-width: 131.25em) {
+      .client__colorRight, .platform__colorRight {
+        top: 6rem; } }
+    @media (max-width: 75em) {
+      .client__colorRight, .platform__colorRight {
+        top: 19rem;
+        right: -11.2rem;
+        height: auto; } }
+    @media (max-width: 64.0625em) {
+      .client__colorRight, .platform__colorRight {
+        top: 21rem;
+        height: auto;
+        right: -15rem; } }
+    @media (max-width: 48em) {
+      .client__colorRight, .platform__colorRight {
+        top: 23rem;
+        height: auto;
+        right: -19rem; } }
+    @media (max-width: 35.9375em) {
+      .client__colorRight, .platform__colorRight {
+        top: 29rem;
+        height: auto;
+        right: -26.3rem; } }
+    .client__colorRight img, .platform__colorRight img {
+      width: 100%; }
+      @media (max-width: 75em) {
+        .client__colorRight img, .platform__colorRight img {
+          width: 70%; } }
+      @media (max-width: 64.0625em) {
+        .client__colorRight img, .platform__colorRight img {
+          width: 60%; } }
+      @media (max-width: 48em) {
+        .client__colorRight img, .platform__colorRight img {
+          width: 50%; } }
+      @media (max-width: 35.9375em) {
+        .client__colorRight img, .platform__colorRight img {
+          width: 30%; } }
   .client__devider, .platform__devider {
     position: relative;
     height: 10px;
@@ -894,11 +1090,13 @@ main {
       padding-top: 19rem; } }
   @media (max-width: 100em) {
     .displayAd {
-      padding: 10rem 12rem; } }
+      padding: 10rem 12rem;
+      margin-bottom: 0; } }
   @media (max-width: 87.5em) {
     .displayAd {
       padding: 10rem 10rem;
-      height: 80vh; } }
+      height: auto;
+      margin-bottom: 0; } }
   @media (max-width: 75em) {
     .displayAd {
       padding: 10rem 8rem;
@@ -1844,7 +2042,7 @@ main {
             left: 16rem; } }
         @media (max-width: 56.25em) {
           .shadowAd__select--two::after {
-            left: 13rem; } }
+            left: 9.4rem; } }
         @media (max-width: 35.9375em) {
           .shadowAd__select--two::after {
             left: 9.4rem; } }
@@ -1870,7 +2068,7 @@ main {
             left: 32rem; } }
         @media (max-width: 56.25em) {
           .shadowAd__select--three::after {
-            left: 25.7rem; } }
+            left: 18.8rem; } }
         @media (max-width: 35.9375em) {
           .shadowAd__select--three::after {
             left: 18.8rem; } }
@@ -2242,7 +2440,8 @@ main {
     justify-content: center;
     width: 400px;
     z-index: 2;
-    cursor: pointer; }
+    cursor: pointer;
+    opacity: 0; }
     @media (max-width: 27.375em) {
       .weboramaAd__devices {
         width: 30rem; } }

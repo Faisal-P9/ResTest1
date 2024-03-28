@@ -593,6 +593,10 @@ weboramaAdTl
   onComplete: videoPlayPause
 })
 
+.to(".weboramaAd__devices", {
+  stagger: 0.2,
+  opacity: 1
+})
 
 
 
